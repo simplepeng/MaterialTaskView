@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.simple.materialtaskview.TaskView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+    <FrameLayout
+        android:id="@+id/task_view_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.simple.materialtaskview.TaskViewThumbnail
+            android:id="@+id/task_view_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ff0000ff" 
+            />
+        <FrameLayout
+            android:id="@+id/lock_to_app_fab"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:contentDescription="@string/app_name"
+            android:background="#ff9cdfd9">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                 />
+        </FrameLayout>
+    </FrameLayout>
+</com.simple.materialtaskview.TaskView>
+
+
